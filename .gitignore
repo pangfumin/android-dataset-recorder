@@ -6,6 +6,7 @@
 /captures
 
 # Ignore idea editor settings
-/.idea/workspace.xml
-/.idea/libraries
 *.iml
+
+.idea/*
+.idea/

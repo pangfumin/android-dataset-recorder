@@ -3,19 +3,31 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
-    dependencies {
-        //classpath 'com.android.tools.build:gradle:2.1.2'
-        classpath "com.android.tools.build:gradle-experimental:0.7.0-alpha4"
+//    dependencies {
+//        //classpath 'com.android.tools.build:gradle:2.1.2'
+//        classpath "com.android.tools.build:gradle-experimental:0.7.0-alpha4"
+//
+//        // NOTE: Do not place your application dependencies here; they belong
+//        // in the individual module build.gradle files
+//    }
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
+    dependencies { classpath 'com.android.tools.build:gradle-experimental:0.9.3'
+        classpath 'com.google.gms:google-services:3.0.0' }
+
 }
 
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 
