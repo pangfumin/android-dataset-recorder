@@ -17,6 +17,9 @@ model {
             versionCode 1
             versionName "1.0"
             multiDexEnabled true
+
+
+
         }
         buildTypes {
             release {
@@ -24,6 +27,9 @@ model {
                 proguardFiles.add(file('proguard-rules.pro'))
             }
         }
+
+
+
     }
 }
 

@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 // If we are not recording we should start it
                 if(!is_recording) {
                     // Set our folder name
-                    SimpleDateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH:mm:ss");
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("yy-MM-dd-HH-mm-ss");
                     folder_name = dateFormat.format(new Date());
 
                     // Also change the text on the button so that it turns into the stop button
@@ -196,9 +196,9 @@ public class MainActivity extends AppCompatActivity {
             // our case, but it is not)
             // Image im = ir.acquireLatestImage();
 
-            // Get the next image from the queue
+//             Get the next image from the queue
             Image image = ir.acquireNextImage();
-
+//
             // Collection of bytes of the image
             byte[] rez;
 
@@ -233,6 +233,9 @@ public class MainActivity extends AppCompatActivity {
                 // Current timestamp of the event
                 // TODO: See if we can use image.getTimestamp()
                 long timestamp = new Date().getTime();
+
+//                Log.w("pangfumin"," Camera :"+ timestamp);
+
 
                 // Create folder name
                 String filename = "data_image.txt";
